@@ -1,0 +1,85 @@
+.homePage-header-outerDiv{
+    display: flex;
+    justify-content: space-between;   
+    background-color: #fff0f5;
+    align-items: center;
+
+}
+
+.homePage-header-title{
+    font-size: 5vw;
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4;
+    text-decoration: none;
+
+}
+
+.homePage-header-innerDiv{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+.homePage-header-element{
+    margin: 1vw;
+    font-size: 3vw;
+    font-family: 'Poppins', sans-serif;
+    color:#ff69b4;
+    /*text-decoration: none;*/
+}
+
+.hero-section {
+  text-align: center;
+  margin-top: 5vw;
+  padding: 2vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.birthday-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 5vw;
+  color: #ff69b4;
+  margin-bottom: 1vw;
+}
+
+.birthday-subtext {
+  font-size: 2vw;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.home-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  padding: 5vw 2vw;
+  flex-wrap: wrap;
+}
+
+.home-card {
+  background-color: #ffe0f0;
+  border-radius: 2vw;
+  padding: 2vw;
+  width: 260px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(255, 105, 180, 0.3);
+}
+
+.home-card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1vw;
+}
+
+

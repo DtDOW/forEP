@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="memories.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="homePage-header-outerDiv">
+    <div class="homePage-header-title">
+        <a href="index.html" class="homePage-header-title">Happy B'Day Epshita</a>
+    </div>
+    <div class="homePage-header-innerDiv">
+        <div class="homePage-header-element">
+            <a href="index.html" class="homePage-header-element">Home</a>
+        </div>
+        <div class="homePage-header-element">
+            <a href="memories.html" class="homePage-header-element">Memories</a>
+        </div>
+        <div class="homePage-header-element">
+            <a href="notes.html" class="homePage-header-element">Notes</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="bubbleContainer"></div>
+
+  <div id="popupOverlay" style="display:none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.3); z-index: 1500;"></div>
+
+  <div class="memory-popup" id="popup">
+    <h2>Memory Title</h2>
+    <div class="collage-container" id="collageContainer"></div>
+    <button onclick="closePopup()">Close</button>
+    <button id="deleteMemoryButton" onclick="deleteCurrentMemory()">Delete</button>
+  </div>
+
+  <div class="upload-memory-wrapper">
+    <div class="upload-memory-container">
+      <input type="file" id="memoryImageInput" accept="image/*" multiple hidden />
+      <input type="text" id="memoryTitleInput" class="memory-input" placeholder="Memory Title" />
+      <textarea id="memoryNoteInput" class="memory-input" placeholder="Write a short note..."></textarea>
+      <button class="memory-action-button" onclick="document.getElementById('memoryImageInput').click()">Select Images</button>
+      <button class="memory-action-button" onclick="uploadMemory()">Upload Memory</button>
+      <div id="uploadProgressBar" style="display:none; margin-top: 1vw;">
+        <div id="uploadBar" style="height: 1.5vw; width: 0%; background-color: #ff69b4; border-radius: 1vw; transition: width 0.3s ease;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAkRF9uaBgQIxvtASBjkBue4GXk226aTns",
+      authDomain: "birthday-site-6a4ce.firebaseapp.com",
+      databaseURL: "https://birthday-site-6a4ce-default-rtdb.firebaseio.com",
+      projectId: "birthday-site-6a4ce",
+      storageBucket: "birthday-site-6a4ce.appspot.com",
+      messagingSenderId: "484901224807",
+      appId: "1:484901224807:web:3541ca37b74586bbee2fc2"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="memories.js"></script>
+</body>
+</html>
+

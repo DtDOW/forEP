@@ -1,0 +1,147 @@
+/*.input-name-div{
+
+   
+    display: end;
+    margin-top: 0.7vw;
+    margin-bottom: 0.7vw;
+    margin-left: 1vw;
+}
+
+.input-name-box{
+    width: 20vw;
+    height: 2vw;
+}
+
+.input-wish-div{
+   display: end;
+   margin-left: 1vw; 
+}
+
+.input-wish-box{
+    width: 30vw; 
+    height: 10vw;
+}*/
+
+.input-name-div {
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-name-box {
+  width: 20vw;
+  height: 2.5vw;
+  padding: 0.5vw 1vw;
+  border-radius: 0.6vw;
+  border: 2px solid #ffb6c1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vw;
+  color: #d63384;
+  outline: none;
+}
+
+.input-wish-div {
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-wish-box {
+  width: 60vw;
+  height: 8vw;
+  padding: 0.8vw 1vw;
+  border-radius: 0.6vw;
+  border: 2px solid #ffb6c1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vw;
+  color: #d63384;
+  outline: none;
+  resize: none;
+}
+
+.submit-button-div {
+  margin: 1vw;
+}
+
+#imageInput {
+  display: none; /* Hide the default file input */
+}
+
+.custom-file-label,
+.submit-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 1.2vw 3vw;               /* ⬅️ Increased padding */
+  border-radius: 2.5vw;             /* ⬅️ Slightly rounder corners */
+  font-size: 1.5vw;                 /* ⬅️ Larger text */
+  margin: 0.5vw;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(255, 105, 180, 0.35);
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.submit-button:focus {
+  outline: none;
+}
+
+
+.custom-file-label:hover,
+.submit-button:hover {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  box-shadow: 0 8px 18px rgba(255, 20, 147, 0.4);
+  transform: scale(1.07);          /* ⬅️ Slightly more lift on hover */
+}
+
+
+
+.note {
+  background-color: #fff0f5;
+  border-left: 6px solid #ff69b4;
+  margin: 1vw auto;
+  padding: 1.5vw;
+  width: 75vw;              /* ⬅️ Wider display */
+  font-size: 1.5vw;         /* ⬅️ Bigger font */
+  border-radius: 2vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.note strong {
+  font-size: 2vw;
+  color: #d63384;
+}
+
+.note p {
+  margin: 0.3vw 0;
+  font-size: 2vw;
+  color: #333;
+}
+
+.note small {
+  font-size: 0.9vw;
+  color: gray;
+}
+
+.note button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 0.3vw 1vw;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5vw;
+}
+
+.note button:hover {
+  background-color: #d42d4d;
+}
+
+
+
